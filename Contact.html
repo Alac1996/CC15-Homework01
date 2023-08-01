@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <style>
+    .main-container {
+      border: 1px solid;
+      padding: 10px 20px 30px 40px;
+    }
+  </style>
+  <body>
+    <hr />
+    <nav>
+      <a href="Index.html">Home</a> | <a href="Education.html">Education</a> |
+      <a href="Work.html">Work Experience</a> |
+      <a href="Contact.html">Contact Me</a> |
+    </nav>
+    <hr />
+    <h1>Contact Me</h1>
+    <br />
+    <div class="main-container">
+      <h3>Enter your info..</h3>
+      <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <label for="name">Your Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value=""
+          style="width: 80%"
+        /><br /><br />
+        <label for="Email">Your E-mail:</label><br />
+        <input
+          type="text"
+          id="Email"
+          name="Email"
+          value=""
+          style="width: 80%"
+        /><br /><br />
+        <label for="Gender">Gender</label><br />
+        <select name="Gender" id="Gender" style="width: 80%; height: 90%">
+          <option value="" disabled selected>Select</option>
+          <option value="select">male</option>
+          <option value="select">Female</option>
+        </select>
+        <br /><br />
+        <label for="Message">Message</label><br />
+        <textarea
+          name="large-text-box"
+          id="large-text-box"
+          style="height: 300px; width: 500px; padding: 10px"
+        ></textarea
+        ><br />
+        <input type="submit" value="send" />
+        <input type="reset" value="clear" />
+      </form>
+    </div>
+  </body>
+</html>
